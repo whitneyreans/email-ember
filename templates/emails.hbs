@@ -1,0 +1,14 @@
+<h1> Your Emails: </h1>
+
+<ul>
+{{#each email in model}}
+<li>{{#link-to 'email' email.id}}{{email.subject}}{{/link-to}}</li>
+<ul>
+    <li><b>Recipient:</b> {{email.address}} </li>
+    </ul>
+  {{/each}}
+</ul>
+
+{{#link-to 'compose' classNames="btn"}}Compose new Email{{/link-to}}
+<br>
+<br>

@@ -1,0 +1,11 @@
+<h1>Subject: {{subject}}</h1>
+<h2>From: {{address}}</h2>
+
+<br>
+
+<p>{{body}}</p>
+
+<br>
+<br>
+<button class="btn btn-danger" {{action: 'delete'}}>Delete</button>
+{{#link-to 'emails'}}Back to Inbox{{/link-to}}

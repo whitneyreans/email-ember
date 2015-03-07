@@ -1,0 +1,1 @@
+EmailClone = Ember.Application.create();
